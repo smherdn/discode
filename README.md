@@ -1,3 +1,5 @@
 # Discode
-<p style="color:blue;">Discode Official GitHub Repository</p> <br />
+Discode Official GitHub Repository <br />
 ***GitHub CLI Code: gh repo clone smherdn/discode***
+
+*Discode, 2022*
