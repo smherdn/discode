@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            b {
+                font-weight: 900;
+            }
+
+            #header {
+                padding: 60px;
+                text-align: center;
+                color: white;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Hello and Welcome!!!</h1>
+            <p>This is a random-coloring header.</p>
+        </div>
+    </body>
+</html>
+<script>
+    const setBg = () => {
+        const header = document.getElementById("header");
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        header.style.backgroundColor = "#" + randomColor;
+
+    }
+    setBg();
+</script>

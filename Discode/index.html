@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Discode</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/icons/logo.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <img onclick="location.reload();" id="logo" src="assets/img/photos/logo.png" />
+        <a href="#default" class="logo">Discode</a>
+        <div class="header-right">
+            <a id="home" class="active" href="#home">Home <i class="fa fa-home"></i></a>
+            <a id="news" href="#news">News <i class="fa fa-paper-plane"></i></a>
+            <a id="docs" href="#documents">Documents <i class="fa fa-folder"></i></a>
+            <a id="cont" href="#contact">Contact <i class="fa fa-phone"></i></a>
+        </div>
+    </div><br />
+    <div class="card">
+        <img src="assets/img/photos/logo.png" id="logovid" />
+        <h1>Discode</h1>
+        <p class="title">
+            Discode is a programming community that allows you to
+            chat with people, find documents and assets, discuss about coding, and
+            participating events in a respectful environment.
+        </p>
+        <div style="margin: 24px 0;">
+            <img onclick="window.location.href = 'https://discord.gg/Z2xVfgNFGB';" style="height:25px;" src="https://www.freepnglogos.com/uploads/discord-logo-png/concours-discord-cartes-voeux-fortnite-france-6.png" />
+            <a onclick="open_youtube();"><i style="color:red;" class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/DiscodeCoding"><i style="color:#00acee;" class="fa fa-twitter"></i></a>
+        </div>
+        <!--Modal-->
+        <button id="moreInfoTrigger">More Info</button>
+
+        <div id="moreInfo" class="modal">
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>About Discode</h2>
+                <p>
+                    Discode is a community that started at May 2022 for presenting a
+                    respectful and entertaining environment for developers and other
+                    content creators (designers, musicians much more). Also it helps
+                    people to find shared codes, documents, designs and other assets.
+                    It has an official <a style="color: whitesmoke; font-size: medium; text-decoration: underline;" href="https://www.youtube.com/channel/UC6rZ8GqiwtRuOK3z2ZUJhMw" target="_blank">
+                        YouTube Channel
+                    </a> and a <a style="color: whitesmoke; font-size: medium;text-decoration:underline;" href="https://www.twitter.com/DiscodeCoding" target="_blank">
+                        Twitter Account
+                    </a> by now. By July 2022, it supports <abbr title="Hyper Text Markup Language">HTML 5</abbr>,
+                    <abbr title="Cascading Style Sheets">CSS 3</abbr>, JavaScript, <abbr title="Discord's Bot AI">Discord.js</abbr>,
+                    Java, C, C#, C++, <abbr title="Structured Query Language">SQL</abbr>, <abbr title="Hypertext Preprocessor">PHP</abbr> and Python 3.
+                </p>
+                <hr style="border:25px solid lightblue;" />
+            </div>
+
+        </div>
+        <!--End-->
+    </div><br /><br /><hr style="border:10px solid black;" /><br />
+    <div id="news">
+        <h1 style="text-align:center;">News & Tutorials</h1>
+        <div id="blog1" style="border:2px solid black;box-shadow:2px 5px 0 rgba(0, 0, 0, 0.3)">
+            <h2 id="blog1title" style="text-align:center;">Discode now have a website!</h2>
+            <p>
+                Hi there! Today, we're glad to tell you that we now have an official website at our
+                4th month! This page will get improves and hope it'll be better at near future.<br />
+                <span style="color:red">Hey!</span> Also you can access our documents without GitHub,
+                with <a style="font-size:medium;color:dodgerblue;" href="#documents">Documents Page</a>!<br />
+                <span style="color:green">Also,</span> on any problem make sure you <a style="font-size:medium;color:dodgerblue;" href="#contact">contact us</a>.
+                <span style="color:blue">Have a good day!</span>
+            </p>
+        </div>
+    </div><br /><br /><hr style="border:10px solid black;" /><br />
+    <div id="documents">
+        <h1 style="text-align:center;">Documents</h1>
+        <div id="unitymovementscript" style="border:1px solid black;" oncontextmenu="alert('A C# movement script for Unity Engine. Includes: WASD Movement, Q Bend')">
+            <h2>unity_movement.cs <span style="font-size:15px;color:white;background:red;border-radius:5px;">&nbsp;Right click&nbsp;</span>
+                                  <span style="font-size:15px;color:white;background:dodgerblue;border-radius:5px;">&nbsp;Unity Engine&nbsp;</span></h2>
+            <a href="assets\documents\movement.cs" download style="float:right;color:white;background:dodgerblue;">&nbsp;Source <i class="fa fa-download"></i>&nbsp;</a>
+        </div><br /><br />
+        <div id="htmlrandomcoloring" style="border:1px solid black;" oncontextmenu="alert('A C# movement script for Unity Engine. Includes: WASD Movement, Q Bend')">
+            <h2>random-coloring.html
+                <span style="font-size:15px;color:white;background:orange;border-radius:5px;">&nbsp;Webpage&nbsp;</span></h2>
+            <a href="assets\documents\random-coloring.html" download style="float:right;color:white;background:dodgerblue;">&nbsp;Source <i class="fa fa-download"></i>&nbsp;</a>
+        </div><br /><br />
+    </div>
+</body>
+</html>
+<script src="assets/js/script.js"></script>
+<script>
+    function open_youtube() {
+        let params = `scrollbars=yes,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+        width=500,height=500,left=-1000,top=-1000`;
+        var youtube_popup = open('https://www.youtube.com/channel/UC6rZ8GqiwtRuOK3z2ZUJhMw', 'test', params);
+        popupBlockerChecker.check(youtube_popup);
+    }
+</script>
